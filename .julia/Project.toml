@@ -1,0 +1,6 @@
+[deps]
+SpineOpt = "0d8fc150-4032-4b6e-9540-20efcb304861"
+
+[compat]
+SpineOpt = "0.5.4"
+julia = "1.4"

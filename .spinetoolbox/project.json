@@ -1,0 +1,96 @@
+{
+    "project": {
+        "version": 6,
+        "name": "spine-cs-a2",
+        "description": "",
+        "specifications": {
+            "Tool": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Tool/spineopt.json"
+                }
+            ]
+        },
+        "connections": [
+            {
+                "from": [
+                    "SpineOpt",
+                    "right"
+                ],
+                "to": [
+                    "output",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "input",
+                    "right"
+                ],
+                "to": [
+                    "SpineOpt",
+                    "left"
+                ]
+            }
+        ]
+    },
+    "items": {
+        "input": {
+            "type": "Data Store",
+            "description": "",
+            "x": -189.0902220158198,
+            "y": -0.5326675605225262,
+            "url": {
+                "dialect": "sqlite",
+                "username": "",
+                "password": "",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": false,
+                    "path": "/home/manuelma/Downloads/A2_gas_case_study.sqlite"
+                }
+            },
+            "cancel_on_error": false
+        },
+        "output": {
+            "type": "Data Store",
+            "description": "",
+            "x": 173.59022201581976,
+            "y": 4.532667560522526,
+            "url": {
+                "dialect": "sqlite",
+                "username": "",
+                "password": "",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/items/output/output.sqlite"
+                }
+            },
+            "cancel_on_error": false
+        },
+        "SpineOpt": {
+            "type": "Tool",
+            "description": "",
+            "x": 6.963772621045052,
+            "y": 0.942222704937663,
+            "specification": "SpineOpt",
+            "execute_in_work": false,
+            "cmd_line_args": [
+                {
+                    "type": "resource",
+                    "arg": "db_url@input"
+                },
+                {
+                    "type": "resource",
+                    "arg": "db_url@output"
+                }
+            ]
+        }
+    }
+}
