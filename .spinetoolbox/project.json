@@ -33,14 +33,15 @@
                     "left"
                 ]
             }
-        ]
+        ],
+        "jumps": []
     },
     "items": {
         "input": {
             "type": "Data Store",
             "description": "",
             "x": -189.0902220158198,
-            "y": -0.5326675605225262,
+            "y": -0.2826675605225262,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -49,8 +50,8 @@
                 "port": "",
                 "database": {
                     "type": "path",
-                    "relative": false,
-                    "path": "/home/manuelma/Downloads/A2_gas_case_study.sqlite"
+                    "relative": true,
+                    "path": ".spinetoolbox/items/input/input.sqlite"
                 }
             },
             "cancel_on_error": false
@@ -59,7 +60,7 @@
             "type": "Data Store",
             "description": "",
             "x": 173.59022201581976,
-            "y": 4.532667560522526,
+            "y": 4.782667560522526,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -78,7 +79,7 @@
             "type": "Tool",
             "description": "",
             "x": 6.963772621045052,
-            "y": 0.942222704937663,
+            "y": 1.192222704937663,
             "specification": "SpineOpt",
             "execute_in_work": false,
             "cmd_line_args": [
