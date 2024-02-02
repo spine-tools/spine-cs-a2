@@ -1,5 +1,7 @@
 # Spine Case Study A2
 
+** This repository is archived and no longer maintained. You may run into issues.**
+
 ## Required
 
 * Spine Toolbox version 0.5.36 or later
